@@ -2,21 +2,20 @@ name := "sensors-history"
 
 version := "1.0.0-SNAPSHOT"
 
-scalaVersion := "2.11.7"
+scalaVersion := "2.11.8"
 
 //resolvers += "Typesafe repository" at "https://repo.typesafe.com/typesafe/releases/"
 
-//resolvers += Resolver.sonatypeRepo("public")
+resolvers += Resolver.sonatypeRepo("public")
 
 //add resolver to Bintray's jcenter
 resolvers += Resolver.jcenterRepo
 
-libraryDependencies += "com.github.jodersky" %% "flow-core" % "2.5.0-RC1"
-
-//(optional) "fat" jar containing native libraries
-libraryDependencies += "com.github.jodersky" % "flow-native" % "2.5.0-RC1" % "runtime"
-
-//(optional & experimental) support for Akka streams
-libraryDependencies += "com.github.jodersky" %% "flow-stream" % "2.5.0-RC1"
+libraryDependencies ++= Seq(
+  "com.github.jodersky" %% "flow-core" % "2.5.0-RC1",
+  "com.github.jodersky" % "flow-native" % "2.5.0-RC1" % "runtime",
+  "com.github.jodersky" %% "flow-stream" % "2.5.0-RC1",
+  "org.reactivemongo" %% "play2-reactivemongo" % "0.11.9-play25-SNAPSHOT"
+)
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala)

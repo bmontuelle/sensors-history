@@ -1,0 +1,42 @@
+<configuration>
+  <conversionRule conversionWord="coloredLevel" converterClass="play.api.Logger$ColoredLevel" />
+  <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>${application.home}/logs/application.log</file>
+    <encoder>
+      <pattern>%date - [%level] - from %logger in %thread %n%message%n%xException%n</pattern>
+    </encoder>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+
+      <!-- daily rollover -->
+      <fileNamePattern>${application.home}/logs/application.log.%d{yyyy-MM-dd}.log</fileNamePattern>
+
+      <!-- keep 30 days' worth of history -->
+      <maxHistory>30</maxHistory>
+    </rollingPolicy>
+  </appender>
+
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>
+        %d{yyyy-MM-dd HH:mm:ss.SSS} %highlight(%-5level) [%-40.40logger{10}] - %msg%n
+      </pattern>
+    </encoder>
+  </appender>
+
+
+  <logger name="application" level="debug"/>
+
+  <logger name="fr.montuelle.arduino.sensors" level="debug"/>
+
+  <logger name="com.ning.http" level="debug"/>
+
+  <logger name="play" level="info"/>
+
+  <logger name="reactivemongo" level="info"/>
+
+  <root level="ERROR">
+    <appender-ref ref="STDOUT" />
+    <appender-ref ref="FILE" />
+  </root>
+
+</configuration>
