@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="SBT: ch.jodersky:jni-library_2.11:0.4.3:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/ch.jodersky/jni-library_2.11/jars/jni-library_2.11-0.4.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/ch.jodersky/jni-library_2.11/srcs/jni-library_2.11-0.4.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
