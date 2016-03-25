@@ -68,7 +68,6 @@
     <orderEntry type="library" name="SBT: commons-codec:commons-codec:1.10:jar" level="project" />
     <orderEntry type="library" scope="TEST" name="SBT: commons-io:commons-io:2.4:jar" level="project" />
     <orderEntry type="library" scope="TEST" name="SBT: commons-logging:commons-logging:1.2:jar" level="project" />
-    <orderEntry type="library" scope="TEST" name="SBT: io.netty:netty:3.5.2.Final:jar" level="project" />
     <orderEntry type="library" name="SBT: io.netty:netty-buffer:4.0.33.Final:jar" level="project" />
     <orderEntry type="library" name="SBT: io.netty:netty-codec:4.0.33.Final:jar" level="project" />
     <orderEntry type="library" name="SBT: io.netty:netty-codec-http:4.0.33.Final:jar" level="project" />
@@ -127,12 +126,20 @@
     <orderEntry type="library" name="SBT: xerces:xercesImpl:2.11.0:jar" level="project" />
     <orderEntry type="library" name="SBT: xml-apis:xml-apis:1.4.01:jar" level="project" />
     <orderEntry type="library" name="SBT: org.apache.logging.log4j:log4j-api:2.0.2:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.reactivemongo:play2-reactivemongo_2.11:0.11.10:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.reactivemongo:reactivemongo-bson-macros_2.11:0.11.10:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.reactivemongo:reactivemongo-bson_2.11:0.11.10:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.reactivemongo:reactivemongo-play-json_2.11:0.11.10:jar" level="project" />
-    <orderEntry type="library" name="SBT: org.reactivemongo:reactivemongo_2.11:0.11.10:jar" level="project" />
     <orderEntry type="library" name="SBT: org.scala-lang:scala-compiler:2.11.7:jar" level="project" />
     <orderEntry type="library" name="SBT: org.scala-lang.modules:scala-xml_2.11:1.0.4:jar" level="project" />
+    <orderEntry type="library" name="SBT: io.netty:netty:3.10.4.Final:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.apache.logging.log4j:log4j-core:2.0.2:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.reactivemongo:play2-reactivemongo_2.11:0.11.9-play25-SNAPSHOT:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.reactivemongo:reactivemongo-bson-macros_2.11:0.11.9:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.reactivemongo:reactivemongo-bson_2.11:0.11.9:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.reactivemongo:reactivemongo-play-json_2.11:0.11.9-play25-SNAPSHOT:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.reactivemongo:reactivemongo_2.11:0.11.9:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.chuusai:shapeless_2.11:2.1.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.typesafe.akka:akka-testkit_2.11:2.3.9:jar" level="project" />
+    <orderEntry type="library" name="SBT: net.sigusr:scala-mqtt-client_2.11:0.6.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.scalaz:scalaz-core_2.11:7.1.1:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.scodec:scodec-bits_2.11:1.0.6:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.scodec:scodec-core_2.11:1.7.1:jar" level="project" />
   </component>
 </module>
