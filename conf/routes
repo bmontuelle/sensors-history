@@ -1,0 +1,2 @@
+
+GET         /climate                 fr.montuelle.arduino.sensors.controllers.Climate.getStream

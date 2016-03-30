@@ -18,4 +18,8 @@ libraryDependencies ++= Seq(
   "org.reactivemongo" %% "play2-reactivemongo" % "0.11.9-play25-SNAPSHOT"
 )
 
+// Play provides two styles of routers, one expects its actions to be injected, the
+// other, legacy style, accesses its actions statically.
+routesGenerator := InjectedRoutesGenerator
+
 lazy val root = (project in file(".")).enablePlugins(PlayScala)
